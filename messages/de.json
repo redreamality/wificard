@@ -1,0 +1,132 @@
+{
+  "title": "WLAN-Karten Generator",
+  "pageTitles": {
+    "default": "WLAN-Karten Generator - Erstellen Sie schöne WLAN-Karten",
+    "restaurant": "WLAN-Karten Generator - Restaurant WLAN-Karten",
+    "hotel": "WLAN-Karten Generator - Hotel WLAN-Karten",
+    "hospital": "WLAN-Karten Generator - Krankenhaus WLAN-Karten",
+    "office": "WLAN-Karten Generator - Büro WLAN-Karten"
+  },
+  "settings": {
+    "title": "WLAN-Einstellungen",
+    "ssid": {
+      "label": "WLAN-Name (SSID)",
+      "placeholder": "WLAN-Namen eingeben"
+    },
+    "password": {
+      "label": "Passwort",
+      "placeholder": "WLAN-Passwort eingeben"
+    },
+    "encryption": {
+      "label": "Verschlüsselungstyp",
+      "nopass": "Kein Passwort"
+    },
+    "template": {
+      "label": "Szenenvorlage",
+      "default": "Standardvorlage",
+      "restaurant": "Restaurantvorlage",
+      "hotel": "Hotelvorlage",
+      "hospital": "Krankenhausvorlage",
+      "office": "Bürovorlage"
+    },
+    "hidePassword": "Passwort ausblenden"
+  },
+  "preview": {
+    "defaultSsid": "👈Bitte WLAN-Namen eingeben",
+    "wifi": "WLAN",
+    "password": "Passwort",
+    "editTitle": "Titel bearbeiten",
+    "editDescription": "Beschreibung bearbeiten",
+    "saveChanges": "Änderungen speichern",
+    "editMode": "Bearbeitungsmodus",
+    "templates": {
+      "default": {
+        "title": "WLAN",
+        "description": "QR-Code scannen zum Verbinden"
+      },
+      "restaurant": {
+        "title": "Restaurant WLAN",
+        "description": "Willkommen in unserem WLAN"
+      },
+      "hotel": {
+        "title": "Hotel WLAN",
+        "description": "Genießen Sie Ihren Aufenthalt"
+      },
+      "hospital": {
+        "title": "Krankenhaus WLAN",
+        "description": "Gute Besserung"
+      },
+      "office": {
+        "title": "Büro WLAN",
+        "description": "Nur für den Bürogebrauch"
+      }
+    }
+  },
+  "print": {
+    "button": "WLAN-Karte drucken"
+  },
+  "instructions": {
+    "title": "Anleitung",
+    "howToUse": {
+      "title": "Verwendung",
+      "steps": [
+        "WLAN-Namen und Passwort links eingeben",
+        "Korrekten Verschlüsselungstyp auswählen",
+        "Anzeigeoptionen anpassen",
+        "Druckknopf klicken"
+      ]
+    },
+    "printTips": {
+      "title": "Drucktipps",
+      "tips": [
+        "A4-Papier verwenden",
+        "Beste Druckqualität wählen",
+        "Mehrere Kopien als Backup drucken"
+      ]
+    },
+    "security": {
+      "title": "Sicherheitstipps",
+      "tips": [
+        "Alle Daten werden lokal verarbeitet",
+        "Keine Daten werden zum Server hochgeladen",
+        "Gedruckte Karten sicher aufbewahren"
+      ]
+    },
+    "whenToUse": {
+      "title": "Einsatzszenarien",
+      "scenarios": [
+        "Hotels: WLAN-Verbindungskarten für Gäste, kann Rezeptionskontakt enthalten",
+        "Restaurants: WLAN-Karten für Kunden, kann Öffnungszeiten enthalten",
+        "Krankenhäuser: WLAN-Karten für Patienten und Besucher, kann wichtige Kontakte enthalten",
+        "Büros: Temporäre WLAN-Karten für Besucher",
+        "Zuhause: Praktischer WLAN-Zugang für Gäste"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Sprache",
+    "english": "Englisch",
+    "chinese": "Chinesisch",
+    "japanese": "Japanisch",
+    "german": "Deutsch",
+    "italian": "Italienisch",
+    "spanish": "Spanisch",
+    "french": "Französisch"
+  },
+  "WiFiCard": {
+    "title": "WLAN-Karten Generator",
+    "ssid": "Netzwerkname (SSID)",
+    "password": "Passwort",
+    "encryption": "Verschlüsselung",
+    "none": "Keine",
+    "print": "Drucken",
+    "hidePassword": "Passwort ausblenden",
+    "hideSsid": "SSID ausblenden",
+    "hideHints": "Hinweise ausblenden",
+    "rotateLayout": "Layout drehen",
+    "copies": "Kopien",
+    "scanToConnect": "Scannen zum Verbinden mit WLAN",
+    "networkName": "Netzwerk:",
+    "passwordLabel": "Passwort:"
+  }
+} 

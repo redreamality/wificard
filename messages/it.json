@@ -1,0 +1,132 @@
+{
+  "title": "Generatore di Schede WiFi",
+  "pageTitles": {
+    "default": "Generatore di Schede WiFi - Crea Belle Schede WiFi",
+    "restaurant": "Generatore di Schede WiFi - Schede WiFi per Ristoranti",
+    "hotel": "Generatore di Schede WiFi - Schede WiFi per Hotel",
+    "hospital": "Generatore di Schede WiFi - Schede WiFi per Ospedali",
+    "office": "Generatore di Schede WiFi - Schede WiFi per Uffici"
+  },
+  "settings": {
+    "title": "Impostazioni WiFi",
+    "ssid": {
+      "label": "Nome WiFi (SSID)",
+      "placeholder": "Inserisci nome WiFi"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Inserisci password WiFi"
+    },
+    "encryption": {
+      "label": "Tipo di Crittografia",
+      "nopass": "Nessuna Password"
+    },
+    "template": {
+      "label": "Template Scena",
+      "default": "Template Predefinito",
+      "restaurant": "Template Ristorante",
+      "hotel": "Template Hotel",
+      "hospital": "Template Ospedale",
+      "office": "Template Ufficio"
+    },
+    "hidePassword": "Nascondi Password"
+  },
+  "preview": {
+    "defaultSsid": "👈Inserisci nome WiFi",
+    "wifi": "WiFi",
+    "password": "Password",
+    "editTitle": "Modifica Titolo",
+    "editDescription": "Modifica Descrizione",
+    "saveChanges": "Salva Modifiche",
+    "editMode": "Modalità Modifica",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "Scansiona il codice QR per connetterti"
+      },
+      "restaurant": {
+        "title": "WiFi Ristorante",
+        "description": "Benvenuto al nostro WiFi"
+      },
+      "hotel": {
+        "title": "WiFi Hotel",
+        "description": "Buon soggiorno"
+      },
+      "hospital": {
+        "title": "WiFi Ospedale",
+        "description": "Auguri di pronta guarigione"
+      },
+      "office": {
+        "title": "WiFi Ufficio",
+        "description": "Solo per uso ufficio"
+      }
+    }
+  },
+  "print": {
+    "button": "Stampa Scheda WiFi"
+  },
+  "instructions": {
+    "title": "Istruzioni",
+    "howToUse": {
+      "title": "Come Usare",
+      "steps": [
+        "Inserisci nome e password WiFi a sinistra",
+        "Seleziona il tipo di crittografia corretto",
+        "Regola le opzioni di visualizzazione",
+        "Clicca il pulsante stampa"
+      ]
+    },
+    "printTips": {
+      "title": "Consigli per la Stampa",
+      "tips": [
+        "Usa carta A4",
+        "Seleziona la migliore qualità di stampa",
+        "Stampa più copie come backup"
+      ]
+    },
+    "security": {
+      "title": "Consigli di Sicurezza",
+      "tips": [
+        "Tutti i dati sono elaborati localmente",
+        "Nulla viene caricato sul server",
+        "Conserva le schede stampate in modo sicuro"
+      ]
+    },
+    "whenToUse": {
+      "title": "Quando Usare",
+      "scenarios": [
+        "Hotel: Fornisci schede di connessione WiFi per gli ospiti, può includere contatti reception",
+        "Ristoranti: Offri schede WiFi ai clienti, può includere orari di apertura",
+        "Ospedali: Fornisci schede WiFi per pazienti e visitatori, può includere contatti importanti",
+        "Uffici: Offri schede WiFi temporanee per i visitatori",
+        "Casa: Fornisci accesso WiFi conveniente per gli ospiti"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Lingua",
+    "english": "Inglese",
+    "chinese": "Cinese",
+    "japanese": "Giapponese",
+    "german": "Tedesco",
+    "italian": "Italiano",
+    "spanish": "Spagnolo",
+    "french": "Francese"
+  },
+  "WiFiCard": {
+    "title": "Generatore di Schede WiFi",
+    "ssid": "Nome Rete (SSID)",
+    "password": "Password",
+    "encryption": "Crittografia",
+    "none": "Nessuna",
+    "print": "Stampa",
+    "hidePassword": "Nascondi Password",
+    "hideSsid": "Nascondi SSID",
+    "hideHints": "Nascondi Suggerimenti",
+    "rotateLayout": "Ruota Layout",
+    "copies": "Copie",
+    "scanToConnect": "Scansiona per connetterti al WiFi",
+    "networkName": "Rete:",
+    "passwordLabel": "Password:"
+  }
+} 

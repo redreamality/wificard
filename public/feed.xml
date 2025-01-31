@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>WiFi Card Generator</title>
+    <link>https://wificard.redreamality.com</link>
+    <description>Generate beautiful WiFi cards with QR codes for easy network sharing</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Hotel WiFi Card Template</title>
+      <link>https://wificard.redreamality.com/en?scene=hotel</link>
+      <description>Generate WiFi cards specifically designed for hotels</description>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Restaurant WiFi Card Template</title>
+      <link>https://wificard.redreamality.com/en?scene=restaurant</link>
+      <description>Generate WiFi cards specifically designed for restaurants</description>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss> 

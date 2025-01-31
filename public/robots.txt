@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wificard.redreamality.com/sitemap.xml 

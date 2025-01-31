@@ -1,0 +1,132 @@
+{
+  "title": "WiFiカードジェネレーター",
+  "pageTitles": {
+    "default": "WiFiカードジェネレーター - 美しいWiFiカードを作成",
+    "restaurant": "WiFiカードジェネレーター - レストラン用WiFiカード",
+    "hotel": "WiFiカードジェネレーター - ホテル用WiFiカード",
+    "hospital": "WiFiカードジェネレーター - 病院用WiFiカード",
+    "office": "WiFiカードジェネレーター - オフィス用WiFiカード"
+  },
+  "settings": {
+    "title": "WiFi設定",
+    "ssid": {
+      "label": "WiFi名（SSID）",
+      "placeholder": "WiFi名を入力"
+    },
+    "password": {
+      "label": "パスワード",
+      "placeholder": "WiFiパスワードを入力"
+    },
+    "encryption": {
+      "label": "暗号化タイプ",
+      "nopass": "パスワードなし"
+    },
+    "template": {
+      "label": "シーンテンプレート",
+      "default": "デフォルトテンプレート",
+      "restaurant": "レストランテンプレート",
+      "hotel": "ホテルテンプレート",
+      "hospital": "病院テンプレート",
+      "office": "オフィステンプレート"
+    },
+    "hidePassword": "パスワードを隠す"
+  },
+  "preview": {
+    "defaultSsid": "👈WiFi名を入力してください",
+    "wifi": "WiFi",
+    "password": "パスワード",
+    "editTitle": "タイトルを編集",
+    "editDescription": "説明を編集",
+    "saveChanges": "変更を保存",
+    "editMode": "編集モード",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "QRコードをスキャンして接続"
+      },
+      "restaurant": {
+        "title": "レストランWiFi",
+        "description": "WiFiをご利用ください"
+      },
+      "hotel": {
+        "title": "ホテルWiFi",
+        "description": "ごゆっくりお過ごしください"
+      },
+      "hospital": {
+        "title": "病院WiFi",
+        "description": "お大事になさってください"
+      },
+      "office": {
+        "title": "オフィスWiFi",
+        "description": "オフィス専用"
+      }
+    }
+  },
+  "print": {
+    "button": "WiFiカードを印刷"
+  },
+  "instructions": {
+    "title": "使用方法",
+    "howToUse": {
+      "title": "使い方",
+      "steps": [
+        "左側にWiFi名とパスワードを入力",
+        "正しい暗号化タイプを選択",
+        "表示オプションを調整",
+        "印刷ボタンをクリック"
+      ]
+    },
+    "printTips": {
+      "title": "印刷のヒント",
+      "tips": [
+        "A4用紙を使用",
+        "最高品質で印刷",
+        "バックアップ用に複数枚印刷"
+      ]
+    },
+    "security": {
+      "title": "セキュリティのヒント",
+      "tips": [
+        "すべてのデータはローカルで処理",
+        "サーバーにデータは送信されません",
+        "印刷したカードは安全に保管"
+      ]
+    },
+    "whenToUse": {
+      "title": "使用シーン",
+      "scenarios": [
+        "ホテル：宿泊客用のWiFi接続カード、フロント連絡先を含める",
+        "レストラン：お客様用のWiFiカード、営業時間を含める",
+        "病院：患者様と来院者用のWiFiカード、重要な連絡先を含める",
+        "オフィス：来客用の一時的なWiFiカード",
+        "自宅：ゲスト用の便利なWiFiアクセス"
+      ]
+    }
+  },
+  "Common": {
+    "language": "言語",
+    "english": "英語",
+    "chinese": "中国語",
+    "japanese": "日本語",
+    "german": "ドイツ語",
+    "italian": "イタリア語",
+    "spanish": "スペイン語",
+    "french": "フランス語"
+  },
+  "WiFiCard": {
+    "title": "WiFiカードジェネレーター",
+    "ssid": "ネットワーク名（SSID）",
+    "password": "パスワード",
+    "encryption": "暗号化",
+    "none": "なし",
+    "print": "印刷",
+    "hidePassword": "パスワードを隠す",
+    "hideSsid": "SSIDを隠す",
+    "hideHints": "ヒントを隠す",
+    "rotateLayout": "レイアウトを回転",
+    "copies": "部数",
+    "scanToConnect": "スキャンしてWiFiに接続",
+    "networkName": "ネットワーク：",
+    "passwordLabel": "パスワード："
+  }
+} 

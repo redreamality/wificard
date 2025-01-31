@@ -1,0 +1,132 @@
+{
+  "title": "WiFi Card Generator",
+  "pageTitles": {
+    "default": "WiFi Card Generator - Create Beautiful WiFi Cards",
+    "restaurant": "WiFi Card Generator - Restaurant WiFi Cards",
+    "hotel": "WiFi Card Generator - Hotel WiFi Cards",
+    "hospital": "WiFi Card Generator - Hospital WiFi Cards",
+    "office": "WiFi Card Generator - Office WiFi Cards"
+  },
+  "settings": {
+    "title": "WiFi Settings",
+    "ssid": {
+      "label": "WiFi Name (SSID)",
+      "placeholder": "Enter WiFi name"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter WiFi password"
+    },
+    "encryption": {
+      "label": "Encryption Type",
+      "nopass": "No Password"
+    },
+    "template": {
+      "label": "Scene Template",
+      "default": "Default Template",
+      "restaurant": "Restaurant Template",
+      "hotel": "Hotel Template",
+      "hospital": "Hospital Template",
+      "office": "Office Template"
+    },
+    "hidePassword": "Hide Password"
+  },
+  "preview": {
+    "defaultSsid": "👈Please enter WiFi name",
+    "wifi": "WiFi",
+    "password": "Password",
+    "editTitle": "Edit Title",
+    "editDescription": "Edit Description",
+    "saveChanges": "Save Changes",
+    "editMode": "Edit Mode",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "Scan QR code to connect"
+      },
+      "restaurant": {
+        "title": "Restaurant WiFi",
+        "description": "Welcome to use our WiFi"
+      },
+      "hotel": {
+        "title": "Hotel WiFi",
+        "description": "Enjoy your stay"
+      },
+      "hospital": {
+        "title": "Hospital WiFi",
+        "description": "Get well soon"
+      },
+      "office": {
+        "title": "Office WiFi",
+        "description": "For office use only"
+      }
+    }
+  },
+  "print": {
+    "button": "Print WiFi Card"
+  },
+  "instructions": {
+    "title": "Instructions",
+    "howToUse": {
+      "title": "How to Use",
+      "steps": [
+        "Enter WiFi name and password on the left",
+        "Select correct encryption type",
+        "Adjust display options",
+        "Click print button"
+      ]
+    },
+    "printTips": {
+      "title": "Print Tips",
+      "tips": [
+        "Use A4 paper",
+        "Select best print quality",
+        "Print multiple copies as backup"
+      ]
+    },
+    "security": {
+      "title": "Security Tips",
+      "tips": [
+        "All data is processed locally",
+        "Nothing is uploaded to server",
+        "Keep printed cards safe"
+      ]
+    },
+    "whenToUse": {
+      "title": "When to Use",
+      "scenarios": [
+        "Hotels: Provide WiFi connection cards for guests, can include front desk contact",
+        "Restaurants: Offer WiFi cards to customers, can include business hours",
+        "Hospitals: Provide WiFi cards for patients and visitors, can include important contacts",
+        "Offices: Offer temporary WiFi cards for visitors",
+        "Home: Provide convenient WiFi access for guests"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Language",
+    "english": "English",
+    "chinese": "Chinese",
+    "japanese": "Japanese",
+    "german": "German",
+    "italian": "Italian",
+    "spanish": "Spanish",
+    "french": "French"
+  },
+  "WiFiCard": {
+    "title": "WiFi Card Generator",
+    "ssid": "Network Name (SSID)",
+    "password": "Password",
+    "encryption": "Encryption",
+    "none": "None",
+    "print": "Print",
+    "hidePassword": "Hide Password",
+    "hideSsid": "Hide SSID",
+    "hideHints": "Hide Hints",
+    "rotateLayout": "Rotate Layout",
+    "copies": "Copies",
+    "scanToConnect": "Scan to connect WiFi",
+    "networkName": "Network:",
+    "passwordLabel": "Password:"
+  }
+} 

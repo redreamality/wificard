@@ -1,0 +1,132 @@
+{
+  "title": "WiFi 卡片生成器",
+  "pageTitles": {
+    "default": "WiFi 卡片生成器 - 创建精美的WiFi卡片",
+    "restaurant": "WiFi 卡片生成器 - 餐厅WiFi卡片",
+    "hotel": "WiFi 卡片生成器 - 酒店WiFi卡片",
+    "hospital": "WiFi 卡片生成器 - 医院WiFi卡片",
+    "office": "WiFi 卡片生成器 - 办公室WiFi卡片"
+  },
+  "settings": {
+    "title": "WiFi设置",
+    "ssid": {
+      "label": "WiFi名称 (SSID)",
+      "placeholder": "输入WiFi名称"
+    },
+    "password": {
+      "label": "密码",
+      "placeholder": "输入WiFi密码"
+    },
+    "encryption": {
+      "label": "加密类型",
+      "nopass": "无密码"
+    },
+    "template": {
+      "label": "场景模板",
+      "default": "默认模板",
+      "restaurant": "餐厅模板",
+      "hotel": "酒店模板",
+      "hospital": "医院模板",
+      "office": "办公室模板"
+    },
+    "hidePassword": "隐藏密码"
+  },
+  "preview": {
+    "defaultSsid": "👈请输入WiFi名称",
+    "wifi": "WiFi",
+    "password": "密码",
+    "editTitle": "编辑标题",
+    "editDescription": "编辑描述",
+    "saveChanges": "保存更改",
+    "editMode": "编辑模式",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "扫描二维码即可连接"
+      },
+      "restaurant": {
+        "title": "餐厅WiFi",
+        "description": "欢迎使用我们的WiFi"
+      },
+      "hotel": {
+        "title": "酒店WiFi",
+        "description": "祝您入住愉快"
+      },
+      "hospital": {
+        "title": "医院WiFi",
+        "description": "祝您早日康复"
+      },
+      "office": {
+        "title": "办公室WiFi",
+        "description": "仅限办公使用"
+      }
+    }
+  },
+  "print": {
+    "button": "打印WiFi卡片"
+  },
+  "instructions": {
+    "title": "使用说明",
+    "howToUse": {
+      "title": "如何使用",
+      "steps": [
+        "在左侧输入WiFi名称和密码",
+        "选择正确的加密类型",
+        "调整显示选项",
+        "点击打印按钮"
+      ]
+    },
+    "printTips": {
+      "title": "打印提示",
+      "tips": [
+        "建议使用A4纸张",
+        "选择最佳打印质量",
+        "可以打印多份以备用"
+      ]
+    },
+    "security": {
+      "title": "安全提示",
+      "tips": [
+        "所有数据仅在本地处理",
+        "不会上传到服务器",
+        "建议妥善保管打印的卡片"
+      ]
+    },
+    "whenToUse": {
+      "title": "使用场景",
+      "scenarios": [
+        "酒店：为客人提供WiFi连接卡片，可以包含前台电话等信息",
+        "餐厅：为顾客提供WiFi连接卡片，可以包含营业时间等信息",
+        "医院：为患者和访客提供WiFi连接卡片，可以包含重要联系方式",
+        "办公室：为访客提供临时WiFi连接卡片",
+        "家庭：为访客提供便捷的WiFi连接方式"
+      ]
+    }
+  },
+  "Common": {
+    "language": "语言",
+    "english": "英文",
+    "chinese": "中文",
+    "japanese": "日文",
+    "german": "德文",
+    "italian": "意大利文",
+    "spanish": "西班牙文",
+    "french": "法文"
+  },
+  "WiFiCard": {
+    "title": "WiFi 卡片生成器",
+    "ssid": "网络名称 (SSID)",
+    "password": "密码",
+    "encryption": "加密方式",
+    "none": "无",
+    "print": "打印",
+    "hidePassword": "隐藏密码",
+    "hideSsid": "隐藏网络名称",
+    "hideHints": "隐藏提示文字",
+    "rotateLayout": "旋转布局",
+    "copies": "打印份数",
+    "scanToConnect": "扫码连接 WiFi",
+    "networkName": "网络：",
+    "passwordLabel": "密码："
+  }
+} 

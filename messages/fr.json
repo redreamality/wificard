@@ -1,0 +1,132 @@
+{
+  "title": "Générateur de Cartes WiFi",
+  "pageTitles": {
+    "default": "Générateur de Cartes WiFi - Créez de Belles Cartes WiFi",
+    "restaurant": "Générateur de Cartes WiFi - Cartes WiFi pour Restaurants",
+    "hotel": "Générateur de Cartes WiFi - Cartes WiFi pour Hôtels",
+    "hospital": "Générateur de Cartes WiFi - Cartes WiFi pour Hôpitaux",
+    "office": "Générateur de Cartes WiFi - Cartes WiFi pour Bureaux"
+  },
+  "settings": {
+    "title": "Paramètres WiFi",
+    "ssid": {
+      "label": "Nom WiFi (SSID)",
+      "placeholder": "Entrez le nom WiFi"
+    },
+    "password": {
+      "label": "Mot de passe",
+      "placeholder": "Entrez le mot de passe WiFi"
+    },
+    "encryption": {
+      "label": "Type de Chiffrement",
+      "nopass": "Sans Mot de Passe"
+    },
+    "template": {
+      "label": "Modèle de Scène",
+      "default": "Modèle par Défaut",
+      "restaurant": "Modèle Restaurant",
+      "hotel": "Modèle Hôtel",
+      "hospital": "Modèle Hôpital",
+      "office": "Modèle Bureau"
+    },
+    "hidePassword": "Masquer le Mot de Passe"
+  },
+  "preview": {
+    "defaultSsid": "👈Entrez le nom WiFi",
+    "wifi": "WiFi",
+    "password": "Mot de passe",
+    "editTitle": "Modifier le Titre",
+    "editDescription": "Modifier la Description",
+    "saveChanges": "Enregistrer les Modifications",
+    "editMode": "Mode Édition",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "Scannez le code QR pour vous connecter"
+      },
+      "restaurant": {
+        "title": "WiFi Restaurant",
+        "description": "Bienvenue sur notre WiFi"
+      },
+      "hotel": {
+        "title": "WiFi Hôtel",
+        "description": "Bon séjour"
+      },
+      "hospital": {
+        "title": "WiFi Hôpital",
+        "description": "Prompt rétablissement"
+      },
+      "office": {
+        "title": "WiFi Bureau",
+        "description": "Usage professionnel uniquement"
+      }
+    }
+  },
+  "print": {
+    "button": "Imprimer la Carte WiFi"
+  },
+  "instructions": {
+    "title": "Instructions",
+    "howToUse": {
+      "title": "Comment Utiliser",
+      "steps": [
+        "Entrez le nom et le mot de passe WiFi à gauche",
+        "Sélectionnez le type de chiffrement correct",
+        "Ajustez les options d'affichage",
+        "Cliquez sur le bouton imprimer"
+      ]
+    },
+    "printTips": {
+      "title": "Conseils d'Impression",
+      "tips": [
+        "Utilisez du papier A4",
+        "Sélectionnez la meilleure qualité d'impression",
+        "Imprimez plusieurs copies en sauvegarde"
+      ]
+    },
+    "security": {
+      "title": "Conseils de Sécurité",
+      "tips": [
+        "Toutes les données sont traitées localement",
+        "Rien n'est téléchargé sur le serveur",
+        "Conservez les cartes imprimées en sécurité"
+      ]
+    },
+    "whenToUse": {
+      "title": "Quand Utiliser",
+      "scenarios": [
+        "Hôtels : Fournissez des cartes de connexion WiFi aux clients, peut inclure le contact de la réception",
+        "Restaurants : Offrez des cartes WiFi aux clients, peut inclure les horaires d'ouverture",
+        "Hôpitaux : Fournissez des cartes WiFi aux patients et visiteurs, peut inclure des contacts importants",
+        "Bureaux : Offrez des cartes WiFi temporaires aux visiteurs",
+        "Maison : Fournissez un accès WiFi pratique aux invités"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Langue",
+    "english": "Anglais",
+    "chinese": "Chinois",
+    "japanese": "Japonais",
+    "german": "Allemand",
+    "italian": "Italien",
+    "spanish": "Espagnol",
+    "french": "Français"
+  },
+  "WiFiCard": {
+    "title": "Générateur de Cartes WiFi",
+    "ssid": "Nom du Réseau (SSID)",
+    "password": "Mot de passe",
+    "encryption": "Chiffrement",
+    "none": "Aucun",
+    "print": "Imprimer",
+    "hidePassword": "Masquer le Mot de Passe",
+    "hideSsid": "Masquer le SSID",
+    "hideHints": "Masquer les Conseils",
+    "rotateLayout": "Rotation de la Mise en Page",
+    "copies": "Copies",
+    "scanToConnect": "Scannez pour vous connecter au WiFi",
+    "networkName": "Réseau :",
+    "passwordLabel": "Mot de passe :"
+  }
+} 

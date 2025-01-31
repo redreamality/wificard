@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@media print {
+  body {
+    background: white !important;
+    min-height: 0 !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+
+  .print\:border-gray-300 {
+    border-color: #d1d5db !important;
+  }
+
+  .print\:text-gray-600 {
+    color: #4b5563 !important;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

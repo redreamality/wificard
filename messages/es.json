@@ -1,0 +1,132 @@
+{
+  "title": "Generador de Tarjetas WiFi",
+  "pageTitles": {
+    "default": "Generador de Tarjetas WiFi - Crea Hermosas Tarjetas WiFi",
+    "restaurant": "Generador de Tarjetas WiFi - Tarjetas WiFi para Restaurantes",
+    "hotel": "Generador de Tarjetas WiFi - Tarjetas WiFi para Hoteles",
+    "hospital": "Generador de Tarjetas WiFi - Tarjetas WiFi para Hospitales",
+    "office": "Generador de Tarjetas WiFi - Tarjetas WiFi para Oficinas"
+  },
+  "settings": {
+    "title": "Configuración WiFi",
+    "ssid": {
+      "label": "Nombre WiFi (SSID)",
+      "placeholder": "Ingresa nombre WiFi"
+    },
+    "password": {
+      "label": "Contraseña",
+      "placeholder": "Ingresa contraseña WiFi"
+    },
+    "encryption": {
+      "label": "Tipo de Encriptación",
+      "nopass": "Sin Contraseña"
+    },
+    "template": {
+      "label": "Plantilla de Escena",
+      "default": "Plantilla Predeterminada",
+      "restaurant": "Plantilla Restaurante",
+      "hotel": "Plantilla Hotel",
+      "hospital": "Plantilla Hospital",
+      "office": "Plantilla Oficina"
+    },
+    "hidePassword": "Ocultar Contraseña"
+  },
+  "preview": {
+    "defaultSsid": "👈Ingresa nombre WiFi",
+    "wifi": "WiFi",
+    "password": "Contraseña",
+    "editTitle": "Editar Título",
+    "editDescription": "Editar Descripción",
+    "saveChanges": "Guardar Cambios",
+    "editMode": "Modo Edición",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "Escanea el código QR para conectarte"
+      },
+      "restaurant": {
+        "title": "WiFi Restaurante",
+        "description": "Bienvenido a nuestro WiFi"
+      },
+      "hotel": {
+        "title": "WiFi Hotel",
+        "description": "Disfruta tu estancia"
+      },
+      "hospital": {
+        "title": "WiFi Hospital",
+        "description": "Que te mejores pronto"
+      },
+      "office": {
+        "title": "WiFi Oficina",
+        "description": "Solo para uso de oficina"
+      }
+    }
+  },
+  "print": {
+    "button": "Imprimir Tarjeta WiFi"
+  },
+  "instructions": {
+    "title": "Instrucciones",
+    "howToUse": {
+      "title": "Cómo Usar",
+      "steps": [
+        "Ingresa nombre y contraseña WiFi a la izquierda",
+        "Selecciona el tipo de encriptación correcto",
+        "Ajusta las opciones de visualización",
+        "Haz clic en el botón imprimir"
+      ]
+    },
+    "printTips": {
+      "title": "Consejos de Impresión",
+      "tips": [
+        "Usa papel A4",
+        "Selecciona la mejor calidad de impresión",
+        "Imprime varias copias como respaldo"
+      ]
+    },
+    "security": {
+      "title": "Consejos de Seguridad",
+      "tips": [
+        "Todos los datos se procesan localmente",
+        "Nada se sube al servidor",
+        "Mantén las tarjetas impresas seguras"
+      ]
+    },
+    "whenToUse": {
+      "title": "Cuándo Usar",
+      "scenarios": [
+        "Hoteles: Proporciona tarjetas de conexión WiFi para huéspedes, puede incluir contacto de recepción",
+        "Restaurantes: Ofrece tarjetas WiFi a clientes, puede incluir horarios de apertura",
+        "Hospitales: Proporciona tarjetas WiFi para pacientes y visitantes, puede incluir contactos importantes",
+        "Oficinas: Ofrece tarjetas WiFi temporales para visitantes",
+        "Casa: Proporciona acceso WiFi conveniente para invitados"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Idioma",
+    "english": "Inglés",
+    "chinese": "Chino",
+    "japanese": "Japonés",
+    "german": "Alemán",
+    "italian": "Italiano",
+    "spanish": "Español",
+    "french": "Francés"
+  },
+  "WiFiCard": {
+    "title": "Generador de Tarjetas WiFi",
+    "ssid": "Nombre de Red (SSID)",
+    "password": "Contraseña",
+    "encryption": "Encriptación",
+    "none": "Ninguna",
+    "print": "Imprimir",
+    "hidePassword": "Ocultar Contraseña",
+    "hideSsid": "Ocultar SSID",
+    "hideHints": "Ocultar Consejos",
+    "rotateLayout": "Rotar Diseño",
+    "copies": "Copias",
+    "scanToConnect": "Escanea para conectarte al WiFi",
+    "networkName": "Red:",
+    "passwordLabel": "Contraseña:"
+  }
+} 
