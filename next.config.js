@@ -1,12 +1,11 @@
-const withNextIntl = require('next-intl/plugin')();
+const withNextIntl = require('next-intl/plugin')('./i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath: process.env.NODE_ENV === 'production' ? '/wificard' : '',
 };
 
 module.exports = withNextIntl(nextConfig); 

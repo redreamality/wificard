@@ -1,13 +1,10 @@
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider, AbstractIntlMessages } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { useLocale } from 'next-intl';
 import '../globals.css';
-import { locales } from '../../config';
+import { locales, LocaleType } from '../../config';
 
-export async function generateStaticParams() {
-  return Promise.all(
-    locales.map((locale) => ({ locale }))
-  );
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
 }
 
 export const metadata = {
@@ -37,19 +34,21 @@ export const metadata = {
   }
 };
 
-export default async function LocaleLayout({
-  children,
-  params
-}: {
+type LayoutProps = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+  params: Promise<{ locale: LocaleType }>;
+}
+
+export default async function LocaleLayout(props: LayoutProps) {
+  const { children, params } = props;
   const { locale } = await params;
-  
-  let messages;
+
+  if (!locales.includes(locale)) notFound();
+
+  let messages: AbstractIntlMessages;
   try {
     messages = (await import(`../../../messages/${locale}.json`)).default;
-  } catch (error) {
+  } catch {
     notFound();
   }
 

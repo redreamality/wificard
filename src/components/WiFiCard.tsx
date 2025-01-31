@@ -33,7 +33,7 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
     }
     return 'default';
   });
-  const [customTemplateStyles, setCustomTemplateStyles] = useState<Record<TemplateType, { title: string; description: string }>>({
+  const [templateStyles, setTemplateStyles] = useState<Record<TemplateType, { title: string; description: string }>>({
     default: { title: '', description: '' },
     restaurant: { title: '', description: '' },
     hotel: { title: '', description: '' },
@@ -181,7 +181,7 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
                     setPassword(newPassword);
                   }}
                   onTemplateStyleUpdate={(newTitle, newDescription) => {
-                    setCustomTemplateStyles(prev => ({
+                    setTemplateStyles((prev: Record<TemplateType, { title: string; description: string }>) => ({
                       ...prev,
                       [template]: { title: newTitle, description: newDescription }
                     }));

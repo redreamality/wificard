@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect, useMemo } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { PencilIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
@@ -25,44 +25,38 @@ function WifiPreviewCard({ ssid, password, hidePassword, qrValue, template, onUp
   const [editedTitle, setEditedTitle] = useState('');
   const [editedDescription, setEditedDescription] = useState('');
 
-  // 使用翻译的模板样式
-  const TEMPLATE_STYLES: Record<TemplateType, {
-    title: string;
-    description: string;
-    icon: string;
-    textColor: string;
-  }> = {
+  const TEMPLATE_STYLES = useMemo(() => ({
     default: {
-      title: t('templates.default.title'),
-      description: t('templates.default.description'),
+      title: '免费 Wi-Fi',
+      description: '无需密码即可连接',
       icon: '📶',
       textColor: 'text-gray-900',
     },
     restaurant: {
-      title: t('templates.restaurant.title'),
-      description: t('templates.restaurant.description'),
+      title: '餐厅 Wi-Fi',
+      description: '用餐时享用免费网络',
       icon: '🍽️',
       textColor: 'text-gray-900',
     },
     hotel: {
-      title: t('templates.hotel.title'),
-      description: t('templates.hotel.description'),
+      title: '酒店 Wi-Fi',
+      description: '客房和公共区域均可连接',
       icon: '🏨',
       textColor: 'text-gray-900',
     },
     hospital: {
-      title: t('templates.hospital.title'),
-      description: t('templates.hospital.description'),
+      title: '医院 Wi-Fi',
+      description: '患者和访客可免费使用',
       icon: '🏥',
       textColor: 'text-gray-900',
     },
     office: {
-      title: t('templates.office.title'),
-      description: t('templates.office.description'),
+      title: '办公 Wi-Fi',
+      description: '安全可靠的商务网络',
       icon: '💼',
       textColor: 'text-gray-900',
     },
-  };
+  }), []);
 
   useEffect(() => {
     setEditedTitle(TEMPLATE_STYLES[template].title);
