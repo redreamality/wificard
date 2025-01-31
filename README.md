@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WiFi Card Generator | WiFi 卡片生成器
 
-## Getting Started
+一个简单的网页应用，用于创建包含 WiFi 登录信息的可打印卡片。用户可以生成带有二维码的卡片，方便访客快速连接 WiFi 网络。
 
-First, run the development server:
+A simple web application for creating printable cards containing WiFi login information. Users can generate cards with QR codes for easy WiFi connection by visitors.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 特点 | Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔒 纯静态网页，所有数据本地处理 | Static webpage, all data processed locally
+- 🌐 支持多语言（中文、英文、日语、德语、法语、意大利语、西班牙语）| Multi-language support (Chinese, English, Japanese, German, French, Italian, Spanish)
+- 🖨️ 打印友好的卡片布局 | Print-friendly card layout
+- 📱 支持各种设备访问 | Responsive design for all devices
+- 🎨 多种场景模板（酒店、餐厅、医院、办公室等）| Multiple scene templates (Hotel, Restaurant, Hospital, Office, etc.)
+- ✨ 实时预览和编辑 | Real-time preview and editing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 技术栈 | Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- next-intl
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
