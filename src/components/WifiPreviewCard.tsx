@@ -25,43 +25,25 @@ function WifiPreviewCard({ ssid, password, hidePassword, qrValue, template, onUp
   const [editedTitle, setEditedTitle] = useState('');
   const [editedDescription, setEditedDescription] = useState('');
 
-  const TEMPLATE_STYLES = useMemo(() => ({
-    default: {
-      title: '免费 Wi-Fi',
-      description: '无需密码即可连接',
-      icon: '📶',
-      textColor: 'text-gray-900',
-    },
-    restaurant: {
-      title: '餐厅 Wi-Fi',
-      description: '用餐时享用免费网络',
-      icon: '🍽️',
-      textColor: 'text-gray-900',
-    },
-    hotel: {
-      title: '酒店 Wi-Fi',
-      description: '客房和公共区域均可连接',
-      icon: '🏨',
-      textColor: 'text-gray-900',
-    },
-    hospital: {
-      title: '医院 Wi-Fi',
-      description: '患者和访客可免费使用',
-      icon: '🏥',
-      textColor: 'text-gray-900',
-    },
-    office: {
-      title: '办公 Wi-Fi',
-      description: '安全可靠的商务网络',
-      icon: '💼',
-      textColor: 'text-gray-900',
-    },
-  }), []);
+  const TEMPLATE_ICONS = {
+    default: '📶',
+    restaurant: '🍽️',
+    hotel: '🏨',
+    hospital: '🏥',
+    office: '💼',
+  };
+
+  const templateStyle = useMemo(() => ({
+    title: isEditing ? editedTitle : t(`templates.${template}.title`),
+    description: isEditing ? editedDescription : t(`templates.${template}.description`),
+    icon: TEMPLATE_ICONS[template],
+    textColor: 'text-gray-900',
+  }), [template, isEditing, editedTitle, editedDescription, t]);
 
   useEffect(() => {
-    setEditedTitle(TEMPLATE_STYLES[template].title);
-    setEditedDescription(TEMPLATE_STYLES[template].description);
-  }, [template, TEMPLATE_STYLES]);
+    setEditedTitle(t(`templates.${template}.title`));
+    setEditedDescription(t(`templates.${template}.description`));
+  }, [template, t]);
 
   const handleSave = () => {
     onUpdate?.(editedSsid, editedPassword);
@@ -72,15 +54,9 @@ function WifiPreviewCard({ ssid, password, hidePassword, qrValue, template, onUp
   const handleEdit = () => {
     setEditedSsid(ssid);
     setEditedPassword(password);
-    setEditedTitle(TEMPLATE_STYLES[template].title);
-    setEditedDescription(TEMPLATE_STYLES[template].description);
+    setEditedTitle(t(`templates.${template}.title`));
+    setEditedDescription(t(`templates.${template}.description`));
     setIsEditing(true);
-  };
-
-  const templateStyle = {
-    ...TEMPLATE_STYLES[template],
-    title: isEditing ? editedTitle : TEMPLATE_STYLES[template].title,
-    description: isEditing ? editedDescription : TEMPLATE_STYLES[template].description,
   };
 
   return (
