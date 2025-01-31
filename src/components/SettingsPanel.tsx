@@ -12,14 +12,6 @@ type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office';
 
 type LocaleType = 'en' | 'zh' | 'ja' | 'de' | 'it' | 'es' | 'fr';
 
-const TEMPLATES: Record<TemplateType, { name: string; icon: string }> = {
-  default: { name: '默认模板', icon: '🏠' },
-  restaurant: { name: '餐厅模板', icon: '🍽️' },
-  hotel: { name: '酒店模板', icon: '🏨' },
-  hospital: { name: '医院模板', icon: '🏥' },
-  office: { name: '办公室模板', icon: '💼' },
-};
-
 const LOCALES: Record<LocaleType, { value: LocaleType; label: string }> = {
   en: { value: 'en', label: 'English' },
   zh: { value: 'zh', label: '中文' },

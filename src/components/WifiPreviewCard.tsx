@@ -25,20 +25,22 @@ function WifiPreviewCard({ ssid, password, hidePassword, qrValue, template, onUp
   const [editedTitle, setEditedTitle] = useState('');
   const [editedDescription, setEditedDescription] = useState('');
 
-  const TEMPLATE_ICONS = {
-    default: '📶',
-    restaurant: '🍽️',
-    hotel: '🏨',
-    hospital: '🏥',
-    office: '💼',
-  };
+  const templateStyle = useMemo(() => {
+    const TEMPLATE_ICONS = {
+      default: '📶',
+      restaurant: '🍽️',
+      hotel: '🏨',
+      hospital: '🏥',
+      office: '💼',
+    };
 
-  const templateStyle = useMemo(() => ({
-    title: isEditing ? editedTitle : t(`templates.${template}.title`),
-    description: isEditing ? editedDescription : t(`templates.${template}.description`),
-    icon: TEMPLATE_ICONS[template],
-    textColor: 'text-gray-900',
-  }), [template, isEditing, editedTitle, editedDescription, t, TEMPLATE_ICONS]);
+    return {
+      title: isEditing ? editedTitle : t(`templates.${template}.title`),
+      description: isEditing ? editedDescription : t(`templates.${template}.description`),
+      icon: TEMPLATE_ICONS[template],
+      textColor: 'text-gray-900',
+    };
+  }, [template, isEditing, editedTitle, editedDescription, t]);
 
   useEffect(() => {
     setEditedTitle(t(`templates.${template}.title`));
