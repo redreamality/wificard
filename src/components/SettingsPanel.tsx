@@ -4,7 +4,7 @@ import { RadioGroup, Listbox } from '@headlessui/react';
 import { Cog6ToothIcon } from '@heroicons/react/24/outline';
 import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 type EncryptionType = 'WPA' | 'WPA2' | 'WPA3' | 'WEP' | 'nopass';
 
@@ -60,7 +60,6 @@ export default function SettingsPanel({
   const locale = useLocale() as LocaleType;
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   const switchLocale = (newLocale: LocaleType) => {
     const params = new URLSearchParams();

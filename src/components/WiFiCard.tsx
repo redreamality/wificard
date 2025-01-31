@@ -10,7 +10,6 @@ import Instructions from './Instructions';
 
 type EncryptionType = 'WPA' | 'WPA2' | 'WPA3' | 'WEP' | 'nopass';
 type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office';
-type SceneType = 'hotel' | 'restaurant' | 'hospital' | 'office';
 
 interface WiFiCardProps {
   scene?: string | null;
@@ -32,13 +31,6 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
       return scene as TemplateType;
     }
     return 'default';
-  });
-  const [templateStyles, setTemplateStyles] = useState<Record<TemplateType, { title: string; description: string }>>({
-    default: { title: '', description: '' },
-    restaurant: { title: '', description: '' },
-    hotel: { title: '', description: '' },
-    hospital: { title: '', description: '' },
-    office: { title: '', description: '' },
   });
 
   // 根据场景设置模板和标题
@@ -179,12 +171,6 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
                   onUpdate={(newSsid, newPassword) => {
                     setSsid(newSsid);
                     setPassword(newPassword);
-                  }}
-                  onTemplateStyleUpdate={(newTitle, newDescription) => {
-                    setTemplateStyles((prev: Record<TemplateType, { title: string; description: string }>) => ({
-                      ...prev,
-                      [template]: { title: newTitle, description: newDescription }
-                    }));
                   }}
                 />
               </div>

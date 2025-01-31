@@ -38,7 +38,7 @@ function WifiPreviewCard({ ssid, password, hidePassword, qrValue, template, onUp
     description: isEditing ? editedDescription : t(`templates.${template}.description`),
     icon: TEMPLATE_ICONS[template],
     textColor: 'text-gray-900',
-  }), [template, isEditing, editedTitle, editedDescription, t]);
+  }), [template, isEditing, editedTitle, editedDescription, t, TEMPLATE_ICONS]);
 
   useEffect(() => {
     setEditedTitle(t(`templates.${template}.title`));
