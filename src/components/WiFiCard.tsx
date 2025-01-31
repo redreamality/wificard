@@ -67,10 +67,14 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
 
   // 更新 URL 参数
   const updateUrlParams = useCallback((newTemplate: TemplateType) => {
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams();
     params.set('scene', newTemplate);
+    if (ssid) params.set('ssid', ssid);
+    if (password) params.set('pwd', password);
+    params.set('enc', encryption);
+    params.set('hide', hidePassword ? '1' : '0');
     router.replace(`${pathname}?${params.toString()}`);
-  }, [pathname, router, searchParams]);
+  }, [pathname, router, ssid, password, encryption, hidePassword]);
 
   // 处理模板变更
   const handleTemplateChange = useCallback((newTemplate: TemplateType) => {

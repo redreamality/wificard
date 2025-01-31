@@ -69,7 +69,7 @@ export default function SettingsPanel({
     if (password) params.set('pwd', password);
     if (encryption) params.set('enc', encryption);
     if (hidePassword) params.set('hide', '1');
-    if (template !== 'default') params.set('tpl', template);
+    if (template !== 'default') params.set('scene', template);
 
     const currentPath = pathname.replace(`/${locale}`, '') || '/';
     const newPath = `/${newLocale}${currentPath}${params.toString() ? '?' + params.toString() : ''}`;
