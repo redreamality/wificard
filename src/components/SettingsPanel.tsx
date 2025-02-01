@@ -5,12 +5,11 @@ import { Cog6ToothIcon } from '@heroicons/react/24/outline';
 import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
+import { LocaleType } from '../config';
 
 type EncryptionType = 'WPA' | 'WPA2' | 'WPA3' | 'WEP' | 'nopass';
 
 type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office' | 'horizontal';
-
-type LocaleType = 'en' | 'zh' | 'ja' | 'de' | 'it' | 'es' | 'fr';
 
 const LOCALES: Record<LocaleType, { value: LocaleType; label: string }> = {
   en: { value: 'en', label: 'English' },
@@ -19,7 +18,15 @@ const LOCALES: Record<LocaleType, { value: LocaleType; label: string }> = {
   de: { value: 'de', label: 'Deutsch' },
   it: { value: 'it', label: 'Italiano' },
   es: { value: 'es', label: 'Español' },
-  fr: { value: 'fr', label: 'Français' }
+  fr: { value: 'fr', label: 'Français' },
+  ru: { value: 'ru', label: 'Русский' },
+  th: { value: 'th', label: 'ไทย' },
+  el: { value: 'el', label: 'Ελληνικά' },
+  hi: { value: 'hi', label: 'हिन्दी' },
+  ar: { value: 'ar', label: 'العربية' },
+  uk: { value: 'uk', label: 'Українська' },
+  pl: { value: 'pl', label: 'Polski' },
+  id: { value: 'id', label: 'Bahasa Indonesia' }
 };
 
 interface SettingsPanelProps {
