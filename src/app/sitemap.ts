@@ -4,7 +4,7 @@ import { locales } from '../config'
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://wificard.redreamality.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const scenes = ['', '?scene=restaurant', '?scene=hotel', '?scene=hospital', '?scene=office']
+  const scenes = ['', '?scene=restaurant', '?scene=hotel', '?scene=hospital', '?scene=office', '?scene=horizontal']
 
   const sitemapEntries = locales.flatMap((locale) =>
     scenes.map((scene) => ({

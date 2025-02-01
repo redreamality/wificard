@@ -8,7 +8,7 @@ import { useRouter, usePathname } from 'next/navigation';
 
 type EncryptionType = 'WPA' | 'WPA2' | 'WPA3' | 'WEP' | 'nopass';
 
-type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office';
+type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office' | 'horizontal';
 
 type LocaleType = 'en' | 'zh' | 'ja' | 'de' | 'it' | 'es' | 'fr';
 
@@ -28,11 +28,13 @@ interface SettingsPanelProps {
   encryption: EncryptionType;
   hidePassword: boolean;
   template: TemplateType;
+  frontDeskPhone?: string;
   onSsidChange: (value: string) => void;
   onPasswordChange: (value: string) => void;
   onEncryptionChange: (value: EncryptionType) => void;
   onHidePasswordChange: (value: boolean) => void;
   onTemplateChange: (value: TemplateType) => void;
+  onFrontDeskPhoneChange?: (value: string) => void;
 }
 
 export default function SettingsPanel({
@@ -41,11 +43,13 @@ export default function SettingsPanel({
   encryption,
   hidePassword,
   template,
+  frontDeskPhone,
   onSsidChange,
   onPasswordChange,
   onEncryptionChange,
   onHidePasswordChange,
   onTemplateChange,
+  onFrontDeskPhoneChange,
 }: SettingsPanelProps) {
   const t = useTranslations('settings');
   const commonT = useTranslations('Common');
@@ -188,7 +192,7 @@ export default function SettingsPanel({
               </label>
               <RadioGroup value={template} onChange={onTemplateChange} className="mt-2">
                 <div className="grid grid-cols-2 gap-3">
-                  {(['default', 'restaurant', 'hotel', 'hospital', 'office'] as const).map((type) => (
+                  {(['default', 'restaurant', 'hotel', 'hospital', 'office', 'horizontal'] as const).map((type) => (
                     <RadioGroup.Option
                       key={type}
                       value={type}
@@ -221,6 +225,24 @@ export default function SettingsPanel({
                 {t('hidePassword')}
               </label>
             </div>
+
+            {/* 酒店特有设置 */}
+            {template === 'hotel' && (
+              <div>
+                <label htmlFor="frontDeskPhone" className="block text-sm font-medium text-gray-700">
+                  {t('hotel.frontDeskPhone.label')}
+                </label>
+                <input
+                  type="tel"
+                  name="frontDeskPhone"
+                  id="frontDeskPhone"
+                  value={frontDeskPhone}
+                  onChange={(e) => onFrontDeskPhoneChange?.(e.target.value)}
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  placeholder={t('hotel.frontDeskPhone.placeholder')}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -5,7 +5,8 @@
     "restaurant": "Generatore di Schede WiFi - Schede WiFi per Ristoranti",
     "hotel": "Generatore di Schede WiFi - Schede WiFi per Hotel",
     "hospital": "Generatore di Schede WiFi - Schede WiFi per Ospedali",
-    "office": "Generatore di Schede WiFi - Schede WiFi per Uffici"
+    "office": "Generatore di Schede WiFi - Schede WiFi per Uffici",
+    "horizontal": "Generatore di Schede WiFi - Schede WiFi Orizzontali"
   },
   "settings": {
     "title": "Impostazioni WiFi",
@@ -27,9 +28,16 @@
       "restaurant": "Template Ristorante",
       "hotel": "Template Hotel",
       "hospital": "Template Ospedale",
-      "office": "Template Ufficio"
+      "office": "Template Ufficio",
+      "horizontal": "Template Orizzontale"
     },
-    "hidePassword": "Nascondi Password"
+    "hidePassword": "Nascondi Password",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "Telefono Reception",
+        "placeholder": "Inserisci numero reception"
+      }
+    }
   },
   "preview": {
     "defaultSsid": "👈Inserisci nome WiFi",
@@ -59,7 +67,14 @@
       "office": {
         "title": "WiFi Ufficio",
         "description": "Solo per uso ufficio"
+      },
+      "horizontal": {
+        "title": "Accesso WiFi",
+        "description": "Punta la fotocamera del telefono verso il codice QR"
       }
+    },
+    "hotel": {
+      "frontDeskPhone": "Telefono Reception"
     }
   },
   "print": {
@@ -111,7 +126,15 @@
     "german": "Tedesco",
     "italian": "Italiano",
     "spanish": "Spagnolo",
-    "french": "Francese"
+    "french": "Francese",
+    "russian": "Russo",
+    "thai": "Tailandese",
+    "greek": "Greco",
+    "hindi": "Hindi",
+    "arabic": "Arabo",
+    "ukrainian": "Ucraino",
+    "polish": "Polacco",
+    "indonesian": "Indonesiano"
   },
   "WiFiCard": {
     "title": "Generatore di Schede WiFi",

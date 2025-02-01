@@ -5,7 +5,8 @@
     "restaurant": "WiFi Card Generator - Restaurant WiFi Cards",
     "hotel": "WiFi Card Generator - Hotel WiFi Cards",
     "hospital": "WiFi Card Generator - Hospital WiFi Cards",
-    "office": "WiFi Card Generator - Office WiFi Cards"
+    "office": "WiFi Card Generator - Office WiFi Cards",
+    "horizontal": "WiFi Card Generator - Horizontal WiFi Cards"
   },
   "settings": {
     "title": "WiFi Settings",
@@ -27,9 +28,16 @@
       "restaurant": "Restaurant Template",
       "hotel": "Hotel Template",
       "hospital": "Hospital Template",
-      "office": "Office Template"
+      "office": "Office Template",
+      "horizontal": "Horizontal Template"
     },
-    "hidePassword": "Hide Password"
+    "hidePassword": "Hide Password",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "Front Desk Phone",
+        "placeholder": "Enter front desk phone number"
+      }
+    }
   },
   "preview": {
     "defaultSsid": "👈Please enter WiFi name",
@@ -59,7 +67,14 @@
       "office": {
         "title": "Office WiFi",
         "description": "For office use only"
+      },
+      "horizontal": {
+        "title": "WiFi Login",
+        "description": "Point your phone's camera at the QR code to connect"
       }
+    },
+    "hotel": {
+      "frontDeskPhone": "Front Desk Phone"
     }
   },
   "print": {
@@ -111,7 +126,15 @@
     "german": "German",
     "italian": "Italian",
     "spanish": "Spanish",
-    "french": "French"
+    "french": "French",
+    "russian": "Russian",
+    "thai": "Thai",
+    "greek": "Greek",
+    "hindi": "Hindi",
+    "arabic": "Arabic",
+    "ukrainian": "Ukrainian",
+    "polish": "Polish",
+    "indonesian": "Indonesian"
   },
   "WiFiCard": {
     "title": "WiFi Card Generator",

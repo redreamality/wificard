@@ -5,12 +5,13 @@
     "restaurant": "WiFiカードジェネレーター - レストラン用WiFiカード",
     "hotel": "WiFiカードジェネレーター - ホテル用WiFiカード",
     "hospital": "WiFiカードジェネレーター - 病院用WiFiカード",
-    "office": "WiFiカードジェネレーター - オフィス用WiFiカード"
+    "office": "WiFiカードジェネレーター - オフィス用WiFiカード",
+    "horizontal": "WiFiカードジェネレーター - 横型WiFiカード"
   },
   "settings": {
     "title": "WiFi設定",
     "ssid": {
-      "label": "WiFi名（SSID）",
+      "label": "WiFi名 (SSID)",
       "placeholder": "WiFi名を入力"
     },
     "password": {
@@ -27,9 +28,16 @@
       "restaurant": "レストランテンプレート",
       "hotel": "ホテルテンプレート",
       "hospital": "病院テンプレート",
-      "office": "オフィステンプレート"
+      "office": "オフィステンプレート",
+      "horizontal": "横型テンプレート"
     },
-    "hidePassword": "パスワードを隠す"
+    "hidePassword": "パスワードを隠す",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "フロント電話番号",
+        "placeholder": "フロント電話番号を入力"
+      }
+    }
   },
   "preview": {
     "defaultSsid": "👈WiFi名を入力してください",
@@ -46,7 +54,7 @@
       },
       "restaurant": {
         "title": "レストランWiFi",
-        "description": "WiFiをご利用ください"
+        "description": "WiFiへようこそ"
       },
       "hotel": {
         "title": "ホテルWiFi",
@@ -58,8 +66,15 @@
       },
       "office": {
         "title": "オフィスWiFi",
-        "description": "オフィス専用"
+        "description": "業務用のみ"
+      },
+      "horizontal": {
+        "title": "WiFiログイン",
+        "description": "スマートフォンのカメラをQRコードに向けて接続"
       }
+    },
+    "hotel": {
+      "frontDeskPhone": "フロント電話番号"
     }
   },
   "print": {
@@ -80,8 +95,8 @@
       "title": "印刷のヒント",
       "tips": [
         "A4用紙を使用",
-        "最高品質で印刷",
-        "バックアップ用に複数枚印刷"
+        "最高の印刷品質を選択",
+        "バックアップ用に複数部数を印刷"
       ]
     },
     "security": {
@@ -95,9 +110,9 @@
     "whenToUse": {
       "title": "使用シーン",
       "scenarios": [
-        "ホテル：宿泊客用のWiFi接続カード、フロント連絡先を含める",
-        "レストラン：お客様用のWiFiカード、営業時間を含める",
-        "病院：患者様と来院者用のWiFiカード、重要な連絡先を含める",
+        "ホテル：宿泊客用のWiFi接続カード、フロント連絡先を含めることができます",
+        "レストラン：お客様用のWiFiカード、営業時間を含めることができます",
+        "病院：患者様と来院者用のWiFiカード、重要な連絡先を含めることができます",
         "オフィス：来客用の一時的なWiFiカード",
         "自宅：ゲスト用の便利なWiFiアクセス"
       ]
@@ -111,11 +126,19 @@
     "german": "ドイツ語",
     "italian": "イタリア語",
     "spanish": "スペイン語",
-    "french": "フランス語"
+    "french": "フランス語",
+    "russian": "ロシア語",
+    "thai": "タイ語",
+    "greek": "ギリシャ語",
+    "hindi": "ヒンディー語",
+    "arabic": "アラビア語",
+    "ukrainian": "ウクライナ語",
+    "polish": "ポーランド語",
+    "indonesian": "インドネシア語"
   },
   "WiFiCard": {
     "title": "WiFiカードジェネレーター",
-    "ssid": "ネットワーク名（SSID）",
+    "ssid": "ネットワーク名 (SSID)",
     "password": "パスワード",
     "encryption": "暗号化",
     "none": "なし",

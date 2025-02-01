@@ -5,7 +5,8 @@
     "restaurant": "WLAN-Karten Generator - Restaurant WLAN-Karten",
     "hotel": "WLAN-Karten Generator - Hotel WLAN-Karten",
     "hospital": "WLAN-Karten Generator - Krankenhaus WLAN-Karten",
-    "office": "WLAN-Karten Generator - Büro WLAN-Karten"
+    "office": "WLAN-Karten Generator - Büro WLAN-Karten",
+    "horizontal": "WLAN-Karten Generator - Horizontale WLAN-Karten"
   },
   "settings": {
     "title": "WLAN-Einstellungen",
@@ -27,12 +28,19 @@
       "restaurant": "Restaurantvorlage",
       "hotel": "Hotelvorlage",
       "hospital": "Krankenhausvorlage",
-      "office": "Bürovorlage"
+      "office": "Bürovorlage",
+      "horizontal": "Horizontale Vorlage"
     },
-    "hidePassword": "Passwort ausblenden"
+    "hidePassword": "Passwort ausblenden",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "Rezeption Telefon",
+        "placeholder": "Telefonnummer der Rezeption eingeben"
+      }
+    }
   },
   "preview": {
-    "defaultSsid": "👈Bitte WLAN-Namen eingeben",
+    "defaultSsid": "👈WLAN-Namen eingeben",
     "wifi": "WLAN",
     "password": "Passwort",
     "editTitle": "Titel bearbeiten",
@@ -59,7 +67,14 @@
       "office": {
         "title": "Büro WLAN",
         "description": "Nur für den Bürogebrauch"
+      },
+      "horizontal": {
+        "title": "WLAN Anmeldung",
+        "description": "Richten Sie Ihre Handykamera auf den QR-Code"
       }
+    },
+    "hotel": {
+      "frontDeskPhone": "Rezeption Telefon"
     }
   },
   "print": {
@@ -111,7 +126,15 @@
     "german": "Deutsch",
     "italian": "Italienisch",
     "spanish": "Spanisch",
-    "french": "Französisch"
+    "french": "Französisch",
+    "russian": "Russisch",
+    "thai": "Thailändisch",
+    "greek": "Griechisch",
+    "hindi": "Hindi",
+    "arabic": "Arabisch",
+    "ukrainian": "Ukrainisch",
+    "polish": "Polnisch",
+    "indonesian": "Indonesisch"
   },
   "WiFiCard": {
     "title": "WLAN-Karten Generator",
@@ -125,7 +148,7 @@
     "hideHints": "Hinweise ausblenden",
     "rotateLayout": "Layout drehen",
     "copies": "Kopien",
-    "scanToConnect": "Scannen zum Verbinden mit WLAN",
+    "scanToConnect": "Scannen um WLAN zu verbinden",
     "networkName": "Netzwerk:",
     "passwordLabel": "Passwort:"
   }

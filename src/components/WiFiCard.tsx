@@ -9,7 +9,7 @@ import SettingsPanel from './SettingsPanel';
 import Instructions from './Instructions';
 
 type EncryptionType = 'WPA' | 'WPA2' | 'WPA3' | 'WEP' | 'nopass';
-type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office';
+type TemplateType = 'default' | 'restaurant' | 'hotel' | 'hospital' | 'office' | 'horizontal';
 
 interface WiFiCardProps {
   scene?: string | null;
@@ -26,8 +26,11 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
   const [password, setPassword] = useState('');
   const [encryption, setEncryption] = useState<EncryptionType>('WPA2');
   const [hidePassword, setHidePassword] = useState(false);
+  const [frontDeskPhone, setFrontDeskPhone] = useState('');
+  const [customTitle, setCustomTitle] = useState<string | null>(null);
+  const [customDescription, setCustomDescription] = useState<string | null>(null);
   const [template, setTemplate] = useState<TemplateType>(() => {
-    if (scene && ['hotel', 'restaurant', 'hospital', 'office'].includes(scene)) {
+    if (scene && ['hotel', 'restaurant', 'hospital', 'office', 'horizontal'].includes(scene)) {
       return scene as TemplateType;
     }
     return 'default';
@@ -35,7 +38,7 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
 
   // 根据场景设置模板和标题
   useEffect(() => {
-    if (scene && ['hotel', 'restaurant', 'hospital', 'office'].includes(scene)) {
+    if (scene && ['hotel', 'restaurant', 'hospital', 'office', 'horizontal'].includes(scene)) {
       const newTemplate = scene as TemplateType;
       setTemplate(newTemplate);
       document.title = t(`pageTitles.${newTemplate}`);
@@ -50,10 +53,12 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
     const newPwd = searchParams.get('pwd');
     const newEnc = searchParams.get('enc') as EncryptionType;
     const newHide = searchParams.get('hide') === '1';
+    const newPhone = searchParams.get('phone');
 
     if (newSsid !== null) setSsid(newSsid);
     if (newPwd !== null) setPassword(newPwd);
     if (newEnc && ['WPA', 'WPA2', 'WPA3', 'WEP', 'nopass'].includes(newEnc)) setEncryption(newEnc);
+    if (newPhone !== null) setFrontDeskPhone(newPhone);
     setHidePassword(newHide);
   }, [searchParams]);
 
@@ -63,10 +68,11 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
     params.set('scene', newTemplate);
     if (ssid) params.set('ssid', ssid);
     if (password) params.set('pwd', password);
+    if (frontDeskPhone) params.set('phone', frontDeskPhone);
     params.set('enc', encryption);
     params.set('hide', hidePassword ? '1' : '0');
     router.replace(`${pathname}?${params.toString()}`);
-  }, [pathname, router, ssid, password, encryption, hidePassword]);
+  }, [pathname, router, ssid, password, encryption, hidePassword, frontDeskPhone]);
 
   // 处理模板变更
   const handleTemplateChange = useCallback((newTemplate: TemplateType) => {
@@ -150,17 +156,19 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
               encryption={encryption}
               hidePassword={hidePassword}
               template={template}
+              frontDeskPhone={frontDeskPhone}
               onSsidChange={setSsid}
               onPasswordChange={setPassword}
               onEncryptionChange={setEncryption}
               onHidePasswordChange={setHidePassword}
               onTemplateChange={handleTemplateChange}
+              onFrontDeskPhoneChange={setFrontDeskPhone}
             />
           </div>
 
           {/* 中间预览和打印 */}
           <div className="flex flex-col items-center space-y-8">
-            <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md print:shadow-none print:p-0">
+            <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-4xl print:shadow-none print:p-0">
               <div id="wifi-card-preview" className="flex justify-center">
                 <WifiPreviewCard
                   ssid={ssid || t('preview.defaultSsid')}
@@ -168,9 +176,19 @@ export default function WiFiCard({ scene }: WiFiCardProps) {
                   hidePassword={hidePassword}
                   qrValue={ssid ? generateWifiString() : 'WIFI:T:WPA2;S:示例WiFi;P:password;;'}
                   template={template}
-                  onUpdate={(newSsid, newPassword) => {
+                  frontDeskPhone={frontDeskPhone}
+                  customTitle={customTitle}
+                  customDescription={customDescription}
+                  onUpdate={(newSsid, newPassword, newFrontDeskPhone) => {
                     setSsid(newSsid);
                     setPassword(newPassword);
+                    if (newFrontDeskPhone !== undefined) {
+                      setFrontDeskPhone(newFrontDeskPhone);
+                    }
+                  }}
+                  onTemplateStyleUpdate={(newTitle, newDescription) => {
+                    setCustomTitle(newTitle);
+                    setCustomDescription(newDescription);
                   }}
                 />
               </div>

@@ -1,0 +1,155 @@
+{
+  "title": "Generator Kart WiFi",
+  "pageTitles": {
+    "default": "Generator Kart WiFi - Twórz Piękne Karty WiFi",
+    "restaurant": "Generator Kart WiFi - Karty WiFi dla Restauracji",
+    "hotel": "Generator Kart WiFi - Karty WiFi dla Hoteli",
+    "hospital": "Generator Kart WiFi - Karty WiFi dla Szpitali",
+    "office": "Generator Kart WiFi - Karty WiFi dla Biur",
+    "horizontal": "Generator Kart WiFi - Poziome Karty WiFi"
+  },
+  "settings": {
+    "title": "Ustawienia WiFi",
+    "ssid": {
+      "label": "Nazwa WiFi (SSID)",
+      "placeholder": "Wprowadź nazwę WiFi"
+    },
+    "password": {
+      "label": "Hasło",
+      "placeholder": "Wprowadź hasło WiFi"
+    },
+    "encryption": {
+      "label": "Typ Szyfrowania",
+      "nopass": "Bez Hasła"
+    },
+    "template": {
+      "label": "Szablon Sceny",
+      "default": "Szablon Domyślny",
+      "restaurant": "Szablon Restauracji",
+      "hotel": "Szablon Hotelu",
+      "hospital": "Szablon Szpitala",
+      "office": "Szablon Biura",
+      "horizontal": "Szablon Poziomy"
+    },
+    "hidePassword": "Ukryj Hasło",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "Telefon Recepcji",
+        "placeholder": "Wprowadź numer telefonu recepcji"
+      }
+    }
+  },
+  "preview": {
+    "defaultSsid": "👈Proszę wprowadzić nazwę WiFi",
+    "wifi": "WiFi",
+    "password": "Hasło",
+    "editTitle": "Edytuj Tytuł",
+    "editDescription": "Edytuj Opis",
+    "saveChanges": "Zapisz Zmiany",
+    "editMode": "Tryb Edycji",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "Zeskanuj kod QR, aby się połączyć"
+      },
+      "restaurant": {
+        "title": "WiFi Restauracji",
+        "description": "Witamy w naszej sieci WiFi"
+      },
+      "hotel": {
+        "title": "WiFi Hotelu",
+        "description": "Miłego pobytu"
+      },
+      "hospital": {
+        "title": "WiFi Szpitala",
+        "description": "Życzymy szybkiego powrotu do zdrowia"
+      },
+      "office": {
+        "title": "WiFi Biura",
+        "description": "Tylko do użytku służbowego"
+      },
+      "horizontal": {
+        "title": "Logowanie WiFi",
+        "description": "Skieruj aparat telefonu na kod QR, aby się połączyć"
+      }
+    },
+    "hotel": {
+      "frontDeskPhone": "Telefon Recepcji"
+    }
+  },
+  "print": {
+    "button": "Wydrukuj Kartę WiFi"
+  },
+  "instructions": {
+    "title": "Instrukcje",
+    "howToUse": {
+      "title": "Jak Używać",
+      "steps": [
+        "Wprowadź nazwę i hasło WiFi po lewej stronie",
+        "Wybierz odpowiedni typ szyfrowania",
+        "Dostosuj opcje wyświetlania",
+        "Kliknij przycisk drukowania"
+      ]
+    },
+    "printTips": {
+      "title": "Wskazówki Drukowania",
+      "tips": [
+        "Użyj papieru A4",
+        "Wybierz najlepszą jakość druku",
+        "Wydrukuj kilka kopii jako zapasowe"
+      ]
+    },
+    "security": {
+      "title": "Wskazówki Bezpieczeństwa",
+      "tips": [
+        "Wszystkie dane są przetwarzane lokalnie",
+        "Nic nie jest przesyłane na serwer",
+        "Przechowuj wydrukowane karty w bezpiecznym miejscu"
+      ]
+    },
+    "whenToUse": {
+      "title": "Kiedy Używać",
+      "scenarios": [
+        "Hotele: Udostępniaj karty połączenia WiFi dla gości, możesz dołączyć kontakt do recepcji",
+        "Restauracje: Oferuj karty WiFi klientom, możesz dołączyć godziny otwarcia",
+        "Szpitale: Udostępniaj karty WiFi pacjentom i odwiedzającym, możesz dołączyć ważne kontakty",
+        "Biura: Oferuj tymczasowe karty WiFi dla odwiedzających",
+        "Dom: Zapewnij wygodny dostęp do WiFi dla gości"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Język",
+    "english": "Angielski",
+    "chinese": "Chiński",
+    "japanese": "Japoński",
+    "german": "Niemiecki",
+    "italian": "Włoski",
+    "spanish": "Hiszpański",
+    "french": "Francuski",
+    "russian": "Rosyjski",
+    "thai": "Tajski",
+    "greek": "Grecki",
+    "hindi": "Hindi",
+    "arabic": "Arabski",
+    "ukrainian": "Ukraiński",
+    "polish": "Polski",
+    "indonesian": "Indonezyjski"
+  },
+  "WiFiCard": {
+    "title": "Generator Kart WiFi",
+    "ssid": "Nazwa Sieci (SSID)",
+    "password": "Hasło",
+    "encryption": "Szyfrowanie",
+    "none": "Brak",
+    "print": "Drukuj",
+    "hidePassword": "Ukryj Hasło",
+    "hideSsid": "Ukryj SSID",
+    "hideHints": "Ukryj Wskazówki",
+    "rotateLayout": "Obróć Układ",
+    "copies": "Kopie",
+    "scanToConnect": "Zeskanuj, aby połączyć się z WiFi",
+    "networkName": "Sieć:",
+    "passwordLabel": "Hasło:"
+  }
+} 

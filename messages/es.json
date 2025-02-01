@@ -5,7 +5,8 @@
     "restaurant": "Generador de Tarjetas WiFi - Tarjetas WiFi para Restaurantes",
     "hotel": "Generador de Tarjetas WiFi - Tarjetas WiFi para Hoteles",
     "hospital": "Generador de Tarjetas WiFi - Tarjetas WiFi para Hospitales",
-    "office": "Generador de Tarjetas WiFi - Tarjetas WiFi para Oficinas"
+    "office": "Generador de Tarjetas WiFi - Tarjetas WiFi para Oficinas",
+    "horizontal": "Generador de Tarjetas WiFi - Tarjetas WiFi Horizontales"
   },
   "settings": {
     "title": "Configuración WiFi",
@@ -27,9 +28,16 @@
       "restaurant": "Plantilla Restaurante",
       "hotel": "Plantilla Hotel",
       "hospital": "Plantilla Hospital",
-      "office": "Plantilla Oficina"
+      "office": "Plantilla Oficina",
+      "horizontal": "Plantilla Horizontal"
     },
-    "hidePassword": "Ocultar Contraseña"
+    "hidePassword": "Ocultar Contraseña",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "Teléfono Recepción",
+        "placeholder": "Ingresa teléfono de recepción"
+      }
+    }
   },
   "preview": {
     "defaultSsid": "👈Ingresa nombre WiFi",
@@ -59,7 +67,14 @@
       "office": {
         "title": "WiFi Oficina",
         "description": "Solo para uso de oficina"
+      },
+      "horizontal": {
+        "title": "Inicio de Sesión WiFi",
+        "description": "Apunta la cámara de tu teléfono al código QR"
       }
+    },
+    "hotel": {
+      "frontDeskPhone": "Teléfono Recepción"
     }
   },
   "print": {
@@ -111,7 +126,15 @@
     "german": "Alemán",
     "italian": "Italiano",
     "spanish": "Español",
-    "french": "Francés"
+    "french": "Francés",
+    "russian": "Ruso",
+    "thai": "Tailandés",
+    "greek": "Griego",
+    "hindi": "Hindi",
+    "arabic": "Árabe",
+    "ukrainian": "Ucraniano",
+    "polish": "Polaco",
+    "indonesian": "Indonesio"
   },
   "WiFiCard": {
     "title": "Generador de Tarjetas WiFi",

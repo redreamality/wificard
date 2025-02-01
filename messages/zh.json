@@ -1,21 +1,22 @@
 {
   "title": "WiFi 卡片生成器",
   "pageTitles": {
-    "default": "WiFi 卡片生成器 - 创建精美的WiFi卡片",
-    "restaurant": "WiFi 卡片生成器 - 餐厅WiFi卡片",
-    "hotel": "WiFi 卡片生成器 - 酒店WiFi卡片",
-    "hospital": "WiFi 卡片生成器 - 医院WiFi卡片",
-    "office": "WiFi 卡片生成器 - 办公室WiFi卡片"
+    "default": "WiFi 卡片生成器 - 创建精美的 WiFi 卡片",
+    "restaurant": "WiFi 卡片生成器 - 餐厅 WiFi 卡片",
+    "hotel": "WiFi 卡片生成器 - 酒店 WiFi 卡片",
+    "hospital": "WiFi 卡片生成器 - 医院 WiFi 卡片",
+    "office": "WiFi 卡片生成器 - 办公室 WiFi 卡片",
+    "horizontal": "WiFi 卡片生成器 - 横向 WiFi 卡片"
   },
   "settings": {
-    "title": "WiFi设置",
+    "title": "WiFi 设置",
     "ssid": {
-      "label": "WiFi名称 (SSID)",
-      "placeholder": "输入WiFi名称"
+      "label": "WiFi 名称 (SSID)",
+      "placeholder": "请输入 WiFi 名称"
     },
     "password": {
       "label": "密码",
-      "placeholder": "输入WiFi密码"
+      "placeholder": "请输入 WiFi 密码"
     },
     "encryption": {
       "label": "加密类型",
@@ -27,12 +28,19 @@
       "restaurant": "餐厅模板",
       "hotel": "酒店模板",
       "hospital": "医院模板",
-      "office": "办公室模板"
+      "office": "办公室模板",
+      "horizontal": "横向模板"
     },
-    "hidePassword": "隐藏密码"
+    "hidePassword": "隐藏密码",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "前台电话",
+        "placeholder": "请输入前台电话"
+      }
+    }
   },
   "preview": {
-    "defaultSsid": "👈请输入WiFi名称",
+    "defaultSsid": "👈请输入 WiFi 名称",
     "wifi": "WiFi",
     "password": "密码",
     "editTitle": "编辑标题",
@@ -42,35 +50,42 @@
     "templates": {
       "default": {
         "title": "WiFi",
-        "description": "扫描二维码即可连接"
+        "description": "扫描二维码连接"
       },
       "restaurant": {
-        "title": "餐厅WiFi",
-        "description": "欢迎使用我们的WiFi"
+        "title": "餐厅 WiFi",
+        "description": "欢迎使用我们的 WiFi"
       },
       "hotel": {
-        "title": "酒店WiFi",
+        "title": "酒店 WiFi",
         "description": "祝您入住愉快"
       },
       "hospital": {
-        "title": "医院WiFi",
+        "title": "医院 WiFi",
         "description": "祝您早日康复"
       },
       "office": {
-        "title": "办公室WiFi",
-        "description": "仅限办公使用"
+        "title": "办公室 WiFi",
+        "description": "仅供办公使用"
+      },
+      "horizontal": {
+        "title": "WiFi 登录",
+        "description": "将手机摄像头对准二维码即可连接"
       }
+    },
+    "hotel": {
+      "frontDeskPhone": "前台电话"
     }
   },
   "print": {
-    "button": "打印WiFi卡片"
+    "button": "打印 WiFi 卡片"
   },
   "instructions": {
     "title": "使用说明",
     "howToUse": {
       "title": "如何使用",
       "steps": [
-        "在左侧输入WiFi名称和密码",
+        "在左侧输入 WiFi 名称和密码",
         "选择正确的加密类型",
         "调整显示选项",
         "点击打印按钮"
@@ -79,53 +94,61 @@
     "printTips": {
       "title": "打印提示",
       "tips": [
-        "建议使用A4纸张",
+        "使用 A4 纸",
         "选择最佳打印质量",
-        "可以打印多份以备用"
+        "打印多份作为备用"
       ]
     },
     "security": {
       "title": "安全提示",
       "tips": [
-        "所有数据仅在本地处理",
+        "所有数据在本地处理",
         "不会上传到服务器",
-        "建议妥善保管打印的卡片"
+        "妥善保管打印的卡片"
       ]
     },
     "whenToUse": {
       "title": "使用场景",
       "scenarios": [
-        "酒店：为客人提供WiFi连接卡片，可以包含前台电话等信息",
-        "餐厅：为顾客提供WiFi连接卡片，可以包含营业时间等信息",
-        "医院：为患者和访客提供WiFi连接卡片，可以包含重要联系方式",
-        "办公室：为访客提供临时WiFi连接卡片",
-        "家庭：为访客提供便捷的WiFi连接方式"
+        "酒店：为客人提供 WiFi 连接卡片，可包含前台联系方式",
+        "餐厅：为顾客提供 WiFi 卡片，可包含营业时间",
+        "医院：为患者和访客提供 WiFi 卡片，可包含重要联系方式",
+        "办公室：为访客提供临时 WiFi 卡片",
+        "家庭：为客人提供便捷的 WiFi 访问"
       ]
     }
   },
   "Common": {
     "language": "语言",
-    "english": "英文",
+    "english": "英语",
     "chinese": "中文",
-    "japanese": "日文",
-    "german": "德文",
-    "italian": "意大利文",
-    "spanish": "西班牙文",
-    "french": "法文"
+    "japanese": "日语",
+    "german": "德语",
+    "italian": "意大利语",
+    "spanish": "西班牙语",
+    "french": "法语",
+    "russian": "俄语",
+    "thai": "泰语",
+    "greek": "希腊语",
+    "hindi": "印地语",
+    "arabic": "阿拉伯语",
+    "ukrainian": "乌克兰语",
+    "polish": "波兰语",
+    "indonesian": "印尼语"
   },
   "WiFiCard": {
     "title": "WiFi 卡片生成器",
     "ssid": "网络名称 (SSID)",
     "password": "密码",
-    "encryption": "加密方式",
+    "encryption": "加密",
     "none": "无",
     "print": "打印",
     "hidePassword": "隐藏密码",
-    "hideSsid": "隐藏网络名称",
-    "hideHints": "隐藏提示文字",
+    "hideSsid": "隐藏 SSID",
+    "hideHints": "隐藏提示",
     "rotateLayout": "旋转布局",
-    "copies": "打印份数",
-    "scanToConnect": "扫码连接 WiFi",
+    "copies": "份数",
+    "scanToConnect": "扫描连接 WiFi",
     "networkName": "网络：",
     "passwordLabel": "密码："
   }

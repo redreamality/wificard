@@ -1,0 +1,155 @@
+{
+  "title": "Generator Kartu WiFi",
+  "pageTitles": {
+    "default": "Generator Kartu WiFi - Buat Kartu WiFi yang Indah",
+    "restaurant": "Generator Kartu WiFi - Kartu WiFi untuk Restoran",
+    "hotel": "Generator Kartu WiFi - Kartu WiFi untuk Hotel",
+    "hospital": "Generator Kartu WiFi - Kartu WiFi untuk Rumah Sakit",
+    "office": "Generator Kartu WiFi - Kartu WiFi untuk Kantor",
+    "horizontal": "Generator Kartu WiFi - Kartu WiFi Horizontal"
+  },
+  "settings": {
+    "title": "Pengaturan WiFi",
+    "ssid": {
+      "label": "Nama WiFi (SSID)",
+      "placeholder": "Masukkan nama WiFi"
+    },
+    "password": {
+      "label": "Kata Sandi",
+      "placeholder": "Masukkan kata sandi WiFi"
+    },
+    "encryption": {
+      "label": "Jenis Enkripsi",
+      "nopass": "Tanpa Kata Sandi"
+    },
+    "template": {
+      "label": "Template Adegan",
+      "default": "Template Default",
+      "restaurant": "Template Restoran",
+      "hotel": "Template Hotel",
+      "hospital": "Template Rumah Sakit",
+      "office": "Template Kantor",
+      "horizontal": "Template Horizontal"
+    },
+    "hidePassword": "Sembunyikan Kata Sandi",
+    "hotel": {
+      "frontDeskPhone": {
+        "label": "Telepon Resepsionis",
+        "placeholder": "Masukkan nomor telepon resepsionis"
+      }
+    }
+  },
+  "preview": {
+    "defaultSsid": "👈Silakan masukkan nama WiFi",
+    "wifi": "WiFi",
+    "password": "Kata Sandi",
+    "editTitle": "Edit Judul",
+    "editDescription": "Edit Deskripsi",
+    "saveChanges": "Simpan Perubahan",
+    "editMode": "Mode Edit",
+    "templates": {
+      "default": {
+        "title": "WiFi",
+        "description": "Pindai kode QR untuk terhubung"
+      },
+      "restaurant": {
+        "title": "WiFi Restoran",
+        "description": "Selamat datang di WiFi kami"
+      },
+      "hotel": {
+        "title": "WiFi Hotel",
+        "description": "Selamat menikmati masa menginap"
+      },
+      "hospital": {
+        "title": "WiFi Rumah Sakit",
+        "description": "Semoga lekas sembuh"
+      },
+      "office": {
+        "title": "WiFi Kantor",
+        "description": "Hanya untuk penggunaan kantor"
+      },
+      "horizontal": {
+        "title": "Login WiFi",
+        "description": "Arahkan kamera ponsel Anda ke kode QR untuk terhubung"
+      }
+    },
+    "hotel": {
+      "frontDeskPhone": "Telepon Resepsionis"
+    }
+  },
+  "print": {
+    "button": "Cetak Kartu WiFi"
+  },
+  "instructions": {
+    "title": "Petunjuk",
+    "howToUse": {
+      "title": "Cara Penggunaan",
+      "steps": [
+        "Masukkan nama dan kata sandi WiFi di sebelah kiri",
+        "Pilih jenis enkripsi yang benar",
+        "Sesuaikan opsi tampilan",
+        "Klik tombol cetak"
+      ]
+    },
+    "printTips": {
+      "title": "Tips Pencetakan",
+      "tips": [
+        "Gunakan kertas A4",
+        "Pilih kualitas cetak terbaik",
+        "Cetak beberapa salinan sebagai cadangan"
+      ]
+    },
+    "security": {
+      "title": "Tips Keamanan",
+      "tips": [
+        "Semua data diproses secara lokal",
+        "Tidak ada yang diunggah ke server",
+        "Simpan kartu yang dicetak di tempat yang aman"
+      ]
+    },
+    "whenToUse": {
+      "title": "Kapan Menggunakan",
+      "scenarios": [
+        "Hotel: Sediakan kartu koneksi WiFi untuk tamu, dapat menyertakan kontak resepsionis",
+        "Restoran: Tawarkan kartu WiFi kepada pelanggan, dapat menyertakan jam operasional",
+        "Rumah Sakit: Sediakan kartu WiFi untuk pasien dan pengunjung, dapat menyertakan kontak penting",
+        "Kantor: Tawarkan kartu WiFi sementara untuk pengunjung",
+        "Rumah: Sediakan akses WiFi yang nyaman untuk tamu"
+      ]
+    }
+  },
+  "Common": {
+    "language": "Bahasa",
+    "english": "Inggris",
+    "chinese": "Mandarin",
+    "japanese": "Jepang",
+    "german": "Jerman",
+    "italian": "Italia",
+    "spanish": "Spanyol",
+    "french": "Prancis",
+    "russian": "Rusia",
+    "thai": "Thailand",
+    "greek": "Yunani",
+    "hindi": "Hindi",
+    "arabic": "Arab",
+    "ukrainian": "Ukraina",
+    "polish": "Polandia",
+    "indonesian": "Indonesia"
+  },
+  "WiFiCard": {
+    "title": "Generator Kartu WiFi",
+    "ssid": "Nama Jaringan (SSID)",
+    "password": "Kata Sandi",
+    "encryption": "Enkripsi",
+    "none": "Tidak Ada",
+    "print": "Cetak",
+    "hidePassword": "Sembunyikan Kata Sandi",
+    "hideSsid": "Sembunyikan SSID",
+    "hideHints": "Sembunyikan Petunjuk",
+    "rotateLayout": "Putar Tata Letak",
+    "copies": "Salinan",
+    "scanToConnect": "Pindai untuk terhubung ke WiFi",
+    "networkName": "Jaringan:",
+    "passwordLabel": "Kata Sandi:"
+  }
+} 
