@@ -5,6 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_URL: process.env.NODE_ENV === 'production' 
+      ? 'https://wificard.redreamality.com' 
+      : 'http://localhost:3000'
+  },
   // basePath: process.env.NODE_ENV === 'production' ? '' : '',
 };
 
