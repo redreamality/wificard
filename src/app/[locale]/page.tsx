@@ -13,7 +13,7 @@ const WiFiCard = dynamic(() => import('../../components/WiFiCard'), {
 export default function Home() {
   const searchParams = useSearchParams();
   const scene = searchParams.get('scene');
-
+  
   return (
     <Suspense fallback={<Loading />}>
       <WiFiCard scene={scene} />

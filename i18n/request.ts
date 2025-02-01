@@ -3,10 +3,10 @@ import { locales } from '../src/config';
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale;
-  return {
+    return {
     messages: (await import(`../messages/${locale}.json`)).default,
-    timeZone: 'Asia/Shanghai',
-    now: new Date(),
-    setRequestLocale: locale
-  };
+      timeZone: 'Asia/Shanghai',
+      now: new Date(),
+      setRequestLocale: locale
+    };
 }); 
